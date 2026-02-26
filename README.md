@@ -1,15 +1,17 @@
 # LAB_MODULES_PACKAGES
 
-## Create a new module and name it "dateOP.py" ,  dateOP has the following:
+## Create a new module and name it "dateOP.py" , dateOP has the following:
+
 - A function that when called prints the current date.
 
 ## Create a new module "main.py" , and do the following:
+
 - import dateOP
 - call the function that print the current date
 
 ### hint : You should import the date class from the datetime module.
 
-------------------------
+---
 
 ## Library (BONUS)
 
@@ -17,23 +19,29 @@ In this exercise, you'll create a Python package named `library` that contains a
 
 Follow these steps to complete the exercise:
 
-1. Create a folder named `library` in your working directory.
+1. Create a folder named `library` in your working directory. DONE!
 
-2. Inside the `library` folder, create a file named `__init__.py`. This file is required for Python to treat the directory as a package.
+2. Inside the `library` folder, create a file named `__init__.py`. This file is required for Python to treat the directory as a package. DONE!
 
-3. Create a new file named `librarian.py` inside the `library` folder. In this file, define the following functions:
+3. Create a new file named `librarian.py` inside the `library` folder. In this file, define the following functions: DONE!
+   - `add_book(library, title, author, isbn)` - takes a dictionary (library), a title (string), an author (string), and an ISBN (string) as input, and adds a new book to the library as a dictionary with the keys 'title', 'author', 'isbn', and 'available'. The 'available' key should have a boolean value, initially set to True. If the ISBN already exists in the library, print an appropriate message. DONE!
 
-   - `add_book(library, title, author, isbn)` - takes a dictionary (library), a title (string), an author (string), and an ISBN (string) as input, and adds a new book to the library as a dictionary with the keys 'title', 'author', 'isbn', and 'available'. The 'available' key should have a boolean value, initially set to True. If the ISBN already exists in the library, print an appropriate message.
-   - `remove_book(library, isbn)` - takes a dictionary (library) and an ISBN (string) as input, and removes the book with the given ISBN from the library. If the ISBN does not exist in the library, print an appropriate message.
-   - `check_out_book(library, isbn)` - takes a dictionary (library) and an ISBN (string) as input, and sets the 'available' key of the book with the given ISBN to False. If the ISBN does not exist in the library or the book is not available, print an appropriate message.
-   - `return_book(library, isbn)` - takes a dictionary (library) and an ISBN (string) as input, and sets the 'available' key of the book with the given ISBN to True. If the ISBN does not exist in the library, print an appropriate message.
-   - `display_books(library)` - takes a dictionary (library) as input and prints all the books in the library in a formatted way.
+   - `remove_book(library, isbn)` - takes a dictionary (library) and an ISBN (string) as input, and removes the book with the given ISBN from the library. If the ISBN does not exist in the library, print an appropriate message. DONE!
 
-4. Write a script named `main.py` in your working directory (outside the `library` folder) that imports and uses the `librarian` module from the `library` package to manage a simple library system.
+   - `check_out_book(library, isbn)` - takes a dictionary (library) and an ISBN (string) as input, and sets the 'available' key of the book with the given ISBN to False. If the ISBN does not exist in the library or the book is not available, print an appropriate message. DONE!
 
-5- use the function from librarian to add books, remove book, checout a book, and display books .
+   - `return_book(library, isbn)` - takes a dictionary (library) and an ISBN (string) as input, and sets the 'available' key of the book with the given ISBN to True. If the ISBN does not exist in the library, print an appropriate message. DONE!
 
-### A sample output should look like this when you run main.py
+   - `display_books(library)` - takes a dictionary (library) as input and prints all the books in the library in a formatted way. DONE!
+
+4. Write a script named `main.py` in your working directory (outside the `library` folder) that imports and uses the `librarian` module from the `library` package to manage a simple library system. DONE!
+
+5- use the function from librarian to add books, remove book, checout a book, and display books . DONE !
+
+### A sample output should look like this when you run main.py\
+
+### A SMAOLE OUTPUT SOULD LOOK LIKE WHEN YOU RUN MAIN.PY
+
 ```
 The Catcher in the Rye by J.D. Salinger (ISBN: 9780316769174) - Available
 To Kill a Mockingbird by Harper Lee (ISBN: 9780446310789) - Available
